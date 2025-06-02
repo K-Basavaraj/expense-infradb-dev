@@ -88,11 +88,11 @@ Since all servers are in **private subnets**, internal access is managed via a *
 
 ---
 
-# Security Group Rules Structure Order:
-# * Frontend Load Balancer SG Rules
-# * Frontend Server SG Rules
-# * Backend Load Balancer SG Rules
-# * Backend Server SG Rules
-# * MySQL (RDS) SG Rules
-# * VPN SG Rules
-# * Bastion and Ansible SG Rules
+### Security Group Rules Structure Order:
+### * Frontend Load Balancer SG Rules
+### * Frontend Server SG Rules
+### * Backend Load Balancer SG Rules
+### * Backend Server SG Rules
+### * MySQL (RDS) SG Rules
+### * VPN SG Rules
+### * Bastion and Ansible SG Rules
