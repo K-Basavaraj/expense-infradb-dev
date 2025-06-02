@@ -75,8 +75,9 @@ module "records" {
       type    = "CNAME"
       ttl     = 1
       records = [
-        module.db.db_instance_address
+        module.db.db_instance_address #RDS endpoint URL to point this DNS record to
       ]
+      allow_overwrite = true #Overwrite existing DNS record if it already exists in Route53
     },
   ]
 }
