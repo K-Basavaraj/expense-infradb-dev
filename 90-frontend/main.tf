@@ -161,7 +161,7 @@ resource "aws_autoscaling_policy" "frontendapol" {
   }
 }
 
-resource "aws_lb_listener_rule" "static" {
+resource "aws_lb_listener_rule" "frontendalbrule" {
   listener_arn = local.web_alb_listener_arn
   priority     = 100 #low priority evaluated first 
 
@@ -175,3 +175,4 @@ resource "aws_lb_listener_rule" "static" {
     }
   }
 }
+
